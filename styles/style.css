@@ -133,14 +133,9 @@ ol {
   cursor: pointer;
 }
 
-.content__card-link:has(:focus-visible) {
-  outline: none;
-  border: none;
-}
-
 .content__card-link:focus {
-  outline: none;
   border: none;
+  outline: none;
 }
 
 .content__list-item:has(:focus-visible) {
@@ -221,7 +216,6 @@ ol {
 }
 
 .search-form__textfield:active {
-  outline: none;
   border: none;
 }
 
