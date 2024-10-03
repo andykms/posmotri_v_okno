@@ -158,7 +158,6 @@ ol {
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 5px;
 }
 
@@ -183,31 +182,27 @@ ol {
 }
 
 .search-form__textfield:active{
+  outline:none;
   border: none;
-  outline: 1px solid #fff;
 }
 
 .search-form__textfield:focus{
-  outline: 1px solid #fff;
-  min-height: 31px;
-  min-width: 229px;
+  outline:none;
+  margin: 2px 2px 2px 0;
+  min-width: 225px;
 }
 
-.search-form__textfield::placeholder:focus{
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  max-height: 27px;
-  max-width: 225px;
+.search-form__label:has(:focus-visible){
+  outline: 1px solid #fff;
 }
 
 .search-form__checkbox-list{
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  padding-bottom: 6.5px;
 }
 
-.search-form__label{
+.search-form__checkbox-list .search-form__label{
   display: flex;
   gap: 5px
 }
@@ -216,6 +211,10 @@ ol {
   min-width: 19px;
   max-height: 19px;
   border: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox:focus-visible{
+  background-color: #fff;
 }
 
 .search-form__submit-button{
