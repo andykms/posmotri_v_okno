@@ -43,7 +43,7 @@ ol {
 .content {
   position: relative;
   display: grid;
-  grid-template-columns: 711px auto;
+  grid-template-columns: 711px 400px;
   align-items: end;
   gap: 30px;
   justify-content: space-between;
@@ -56,7 +56,7 @@ ol {
 .result__video-container {
   margin-top: 78px;
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .result__video {
@@ -89,8 +89,8 @@ ol {
 }
 
 .content__details {
-  min-height: 534px;
-  min-width: 410px;
+  min-width: 415px;
+  align-self: self-start;
 }
 
 .title {
@@ -123,6 +123,7 @@ ol {
 
 .content__list-item {
   display: flex;
+  max-width: 394px;
 }
 
 .content__video-card {
@@ -336,8 +337,4 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   font-weight: 400;
   font-size: 30px;
   line-height: 33px;
-}
-
-.error {
-  align-items: start;
 }
